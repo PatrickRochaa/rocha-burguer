@@ -983,6 +983,20 @@ video {
   transform: none;
 }
 
+@keyframes fade {
+  0% {
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.animate-fade {
+  animation: fade 1s ease-in-out;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -2578,6 +2592,10 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-700 {
+  transition-delay: 700ms;
 }
 
 .duration-200 {
