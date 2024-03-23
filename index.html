@@ -58,8 +58,13 @@
           >Rua Sonhos - 42, Estrela Azul - Contagem - MG
         </span>
 
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-          <span class="text-white">Segunda á Domingo - 18:00 as 22:00</span>
+        <div
+          class="bg-green-600 px-4 py-1 rounded-lg mt-5"
+          id="date-span"
+          data-semana="3,4,5,6,7"
+          data-horario="18,22"
+        >
+          <span class="text-white">Quarta á Domingo - 18:00 as 22:00</span>
         </div>
       </div>
     </header>
@@ -277,6 +282,7 @@
     <!--Button Cart Footer-->
     <footer
       class="w-full bg-green-600 py-2 fixed bottom-0 z-40 flex items-center justify-center"
+      id="footer"
     >
       <button
         class="flex items-center gap-2 text-white font-bold"
